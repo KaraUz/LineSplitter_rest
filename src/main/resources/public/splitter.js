@@ -1,11 +1,13 @@
 $(document).ready(function() {
-    $('#SubmitButton').click(function(){
-         var text = $('#test').val();
-         var lettersPerLine = parseInt($('#letters-per-line').val());
+    var splitTextFunction = function(){
+        var text = $('#input-text').val();
+        var lettersPerLine = parseInt($('#letters-per-line').val());
 
-         splitIntoLines(text, lettersPerLine);
-     });
+        splitIntoLines(text, lettersPerLine);
+    };
 
+    $('#SubmitButton').click(splitTextFunction);
+    //splitTextFunction();
 });
 
 function splitIntoLines(text, lettersPerLine){
@@ -17,6 +19,6 @@ function splitIntoLines(text, lettersPerLine){
             url: lineSplitterServiceLocation,
             data: {'text':text, 'lettersPerLine':lettersPerLine}
         }).then(function(data) {
-           $('.my-formatted-text').text(data.content);
+           $('#formatted-text').text(data.content);
         });
 }

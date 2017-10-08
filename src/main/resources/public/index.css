@@ -1,0 +1,15 @@
+body {
+    background-color: white;
+}
+
+.jumbotron{
+    background-color: white;
+}
+
+.input-label{
+    font-weight: bold;
+}
+
+.top-buffer {
+    margin-top:20px;
+}
