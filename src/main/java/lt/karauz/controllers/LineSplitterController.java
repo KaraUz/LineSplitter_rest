@@ -1,6 +1,6 @@
 package lt.karauz.controllers;
 
-import lt.karauz.Utilities.StringUtilities;
+import lt.karauz.utilities.StringUtilities;
 import lt.karauz.data_objects.StringResponse;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

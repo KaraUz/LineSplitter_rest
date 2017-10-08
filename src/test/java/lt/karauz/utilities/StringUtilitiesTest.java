@@ -1,4 +1,4 @@
-package lt.karauz.Utilities;
+package lt.karauz.utilities;
 
 import org.junit.*;
 import org.junit.experimental.runners.Enclosed;

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Line Splitter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+<h1 id="title">Line Splitter</h1>
+<div>
+    <form>
+        Text: <input id="test" type="text" name="text" value="Type text to split into lines!"><br>
+        Letters per line: <input id="letters-per-line" type="number" name="lettersPerLine" min="1" value="1"><br>
+        <input id="SubmitButton" type="button" value="Split It!">
+    </form>
+    <p class="my-formatted-text" style="white-space: pre-line"></p>
+    <script src="splitter.js"></script>
+</div>
+</body>
+</html>

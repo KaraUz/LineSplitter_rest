@@ -1,4 +1,4 @@
-package lt.karauz.Utilities;
+package lt.karauz.utilities;
 
 public class StringUtilities {
     public final static String LINE_SEPARATOR = "\n";//use System.getProperty("line.separator") for system separator
@@ -15,7 +15,7 @@ public class StringUtilities {
         StringBuilder builder = new StringBuilder();
         boolean endOfText = false;
         int startIndex = 0;
-        int endIndex = 0;
+        int endIndex;
 
         while (!endOfText) {
             int futureStartIndex = startIndex + lettersPerLine + 1;
